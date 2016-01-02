@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/peterma/Downloads/Parse-Starter-Project-1.11.0/ParseStarterProject/src/main/AndroidManifest.xml:10:1-76:12
+ADDED from /Users/peterma/Downloads/Parse-Starter-Project-1.11.0/ParseStarterProject/src/main/AndroidManifest.xml:10:1-90:12
 	xmlns:android
 		ADDED from /Users/peterma/Downloads/Parse-Starter-Project-1.11.0/ParseStarterProject/src/main/AndroidManifest.xml:10:11-69
 	package
@@ -48,7 +48,7 @@ ADDED from /Users/peterma/Downloads/Parse-Starter-Project-1.11.0/ParseStarterPro
 	android:name
 		ADDED from /Users/peterma/Downloads/Parse-Starter-Project-1.11.0/ParseStarterProject/src/main/AndroidManifest.xml:28:22-77
 application
-ADDED from /Users/peterma/Downloads/Parse-Starter-Project-1.11.0/ParseStarterProject/src/main/AndroidManifest.xml:30:5-74:19
+ADDED from /Users/peterma/Downloads/Parse-Starter-Project-1.11.0/ParseStarterProject/src/main/AndroidManifest.xml:30:5-88:19
 MERGED from [com.android.support:appcompat-v7:22.2.0] /Users/peterma/Downloads/Parse-Starter-Project-1.11.0/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:support-v4:22.2.0] /Users/peterma/Downloads/Parse-Starter-Project-1.11.0/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.0/AndroidManifest.xml:22:5-20
 	android:label
@@ -89,50 +89,62 @@ category#android.intent.category.LAUNCHER
 ADDED from /Users/peterma/Downloads/Parse-Starter-Project-1.11.0/ParseStarterProject/src/main/AndroidManifest.xml:49:17-77
 	android:name
 		ADDED from /Users/peterma/Downloads/Parse-Starter-Project-1.11.0/ParseStarterProject/src/main/AndroidManifest.xml:49:27-74
+activity#com.parse.starter.TriggerActivity
+ADDED from /Users/peterma/Downloads/Parse-Starter-Project-1.11.0/ParseStarterProject/src/main/AndroidManifest.xml:54:9-56:48
+	android:label
+		ADDED from /Users/peterma/Downloads/Parse-Starter-Project-1.11.0/ParseStarterProject/src/main/AndroidManifest.xml:56:13-45
+	android:name
+		ADDED from /Users/peterma/Downloads/Parse-Starter-Project-1.11.0/ParseStarterProject/src/main/AndroidManifest.xml:55:13-44
 service#com.parse.PushService
-ADDED from /Users/peterma/Downloads/Parse-Starter-Project-1.11.0/ParseStarterProject/src/main/AndroidManifest.xml:53:9-57
+ADDED from /Users/peterma/Downloads/Parse-Starter-Project-1.11.0/ParseStarterProject/src/main/AndroidManifest.xml:58:9-57
 	android:name
-		ADDED from /Users/peterma/Downloads/Parse-Starter-Project-1.11.0/ParseStarterProject/src/main/AndroidManifest.xml:53:18-54
+		ADDED from /Users/peterma/Downloads/Parse-Starter-Project-1.11.0/ParseStarterProject/src/main/AndroidManifest.xml:58:18-54
 receiver#com.parse.ParsePushBroadcastReceiver
-ADDED from /Users/peterma/Downloads/Parse-Starter-Project-1.11.0/ParseStarterProject/src/main/AndroidManifest.xml:54:9-61:20
+ADDED from /Users/peterma/Downloads/Parse-Starter-Project-1.11.0/ParseStarterProject/src/main/AndroidManifest.xml:59:9-66:20
 	android:exported
-		ADDED from /Users/peterma/Downloads/Parse-Starter-Project-1.11.0/ParseStarterProject/src/main/AndroidManifest.xml:55:13-37
+		ADDED from /Users/peterma/Downloads/Parse-Starter-Project-1.11.0/ParseStarterProject/src/main/AndroidManifest.xml:60:13-37
 	android:name
-		ADDED from /Users/peterma/Downloads/Parse-Starter-Project-1.11.0/ParseStarterProject/src/main/AndroidManifest.xml:54:19-70
+		ADDED from /Users/peterma/Downloads/Parse-Starter-Project-1.11.0/ParseStarterProject/src/main/AndroidManifest.xml:59:19-70
 intent-filter#com.parse.push.intent.DELETE+com.parse.push.intent.OPEN+com.parse.push.intent.RECEIVE
-ADDED from /Users/peterma/Downloads/Parse-Starter-Project-1.11.0/ParseStarterProject/src/main/AndroidManifest.xml:56:13-60:29
+ADDED from /Users/peterma/Downloads/Parse-Starter-Project-1.11.0/ParseStarterProject/src/main/AndroidManifest.xml:61:13-65:29
 action#com.parse.push.intent.RECEIVE
-ADDED from /Users/peterma/Downloads/Parse-Starter-Project-1.11.0/ParseStarterProject/src/main/AndroidManifest.xml:57:17-72
+ADDED from /Users/peterma/Downloads/Parse-Starter-Project-1.11.0/ParseStarterProject/src/main/AndroidManifest.xml:62:17-72
 	android:name
-		ADDED from /Users/peterma/Downloads/Parse-Starter-Project-1.11.0/ParseStarterProject/src/main/AndroidManifest.xml:57:25-69
+		ADDED from /Users/peterma/Downloads/Parse-Starter-Project-1.11.0/ParseStarterProject/src/main/AndroidManifest.xml:62:25-69
 action#com.parse.push.intent.DELETE
-ADDED from /Users/peterma/Downloads/Parse-Starter-Project-1.11.0/ParseStarterProject/src/main/AndroidManifest.xml:58:17-71
+ADDED from /Users/peterma/Downloads/Parse-Starter-Project-1.11.0/ParseStarterProject/src/main/AndroidManifest.xml:63:17-71
 	android:name
-		ADDED from /Users/peterma/Downloads/Parse-Starter-Project-1.11.0/ParseStarterProject/src/main/AndroidManifest.xml:58:25-68
+		ADDED from /Users/peterma/Downloads/Parse-Starter-Project-1.11.0/ParseStarterProject/src/main/AndroidManifest.xml:63:25-68
 action#com.parse.push.intent.OPEN
-ADDED from /Users/peterma/Downloads/Parse-Starter-Project-1.11.0/ParseStarterProject/src/main/AndroidManifest.xml:59:17-69
+ADDED from /Users/peterma/Downloads/Parse-Starter-Project-1.11.0/ParseStarterProject/src/main/AndroidManifest.xml:64:17-69
 	android:name
-		ADDED from /Users/peterma/Downloads/Parse-Starter-Project-1.11.0/ParseStarterProject/src/main/AndroidManifest.xml:59:25-66
+		ADDED from /Users/peterma/Downloads/Parse-Starter-Project-1.11.0/ParseStarterProject/src/main/AndroidManifest.xml:64:25-66
 receiver#com.parse.GcmBroadcastReceiver
-ADDED from /Users/peterma/Downloads/Parse-Starter-Project-1.11.0/ParseStarterProject/src/main/AndroidManifest.xml:62:9-73:20
+ADDED from /Users/peterma/Downloads/Parse-Starter-Project-1.11.0/ParseStarterProject/src/main/AndroidManifest.xml:67:9-78:20
 	android:permission
-		ADDED from /Users/peterma/Downloads/Parse-Starter-Project-1.11.0/ParseStarterProject/src/main/AndroidManifest.xml:63:13-73
+		ADDED from /Users/peterma/Downloads/Parse-Starter-Project-1.11.0/ParseStarterProject/src/main/AndroidManifest.xml:68:13-73
 	android:name
-		ADDED from /Users/peterma/Downloads/Parse-Starter-Project-1.11.0/ParseStarterProject/src/main/AndroidManifest.xml:62:19-64
+		ADDED from /Users/peterma/Downloads/Parse-Starter-Project-1.11.0/ParseStarterProject/src/main/AndroidManifest.xml:67:19-64
 intent-filter#com.google.android.c2dm.intent.RECEIVE+com.google.android.c2dm.intent.REGISTRATION+com.parse.starter
-ADDED from /Users/peterma/Downloads/Parse-Starter-Project-1.11.0/ParseStarterProject/src/main/AndroidManifest.xml:64:13-72:29
+ADDED from /Users/peterma/Downloads/Parse-Starter-Project-1.11.0/ParseStarterProject/src/main/AndroidManifest.xml:69:13-77:29
 action#com.google.android.c2dm.intent.RECEIVE
-ADDED from /Users/peterma/Downloads/Parse-Starter-Project-1.11.0/ParseStarterProject/src/main/AndroidManifest.xml:65:17-81
+ADDED from /Users/peterma/Downloads/Parse-Starter-Project-1.11.0/ParseStarterProject/src/main/AndroidManifest.xml:70:17-81
 	android:name
-		ADDED from /Users/peterma/Downloads/Parse-Starter-Project-1.11.0/ParseStarterProject/src/main/AndroidManifest.xml:65:25-78
+		ADDED from /Users/peterma/Downloads/Parse-Starter-Project-1.11.0/ParseStarterProject/src/main/AndroidManifest.xml:70:25-78
 action#com.google.android.c2dm.intent.REGISTRATION
-ADDED from /Users/peterma/Downloads/Parse-Starter-Project-1.11.0/ParseStarterProject/src/main/AndroidManifest.xml:66:17-86
+ADDED from /Users/peterma/Downloads/Parse-Starter-Project-1.11.0/ParseStarterProject/src/main/AndroidManifest.xml:71:17-86
 	android:name
-		ADDED from /Users/peterma/Downloads/Parse-Starter-Project-1.11.0/ParseStarterProject/src/main/AndroidManifest.xml:66:25-83
+		ADDED from /Users/peterma/Downloads/Parse-Starter-Project-1.11.0/ParseStarterProject/src/main/AndroidManifest.xml:71:25-83
 category#com.parse.starter
-ADDED from /Users/peterma/Downloads/Parse-Starter-Project-1.11.0/ParseStarterProject/src/main/AndroidManifest.xml:71:17-62
+ADDED from /Users/peterma/Downloads/Parse-Starter-Project-1.11.0/ParseStarterProject/src/main/AndroidManifest.xml:76:17-62
 	android:name
-		ADDED from /Users/peterma/Downloads/Parse-Starter-Project-1.11.0/ParseStarterProject/src/main/AndroidManifest.xml:71:27-59
+		ADDED from /Users/peterma/Downloads/Parse-Starter-Project-1.11.0/ParseStarterProject/src/main/AndroidManifest.xml:76:27-59
+receiver#com.parse.starter.NotificationReceiver
+ADDED from /Users/peterma/Downloads/Parse-Starter-Project-1.11.0/ParseStarterProject/src/main/AndroidManifest.xml:80:9-87:20
+	android:exported
+		ADDED from /Users/peterma/Downloads/Parse-Starter-Project-1.11.0/ParseStarterProject/src/main/AndroidManifest.xml:81:13-37
+	android:name
+		ADDED from /Users/peterma/Downloads/Parse-Starter-Project-1.11.0/ParseStarterProject/src/main/AndroidManifest.xml:80:19-72
 uses-sdk
 INJECTED from /Users/peterma/Downloads/Parse-Starter-Project-1.11.0/ParseStarterProject/src/main/AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:appcompat-v7:22.2.0] /Users/peterma/Downloads/Parse-Starter-Project-1.11.0/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/AndroidManifest.xml:20:5-43
