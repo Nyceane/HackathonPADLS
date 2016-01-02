@@ -15,7 +15,10 @@ import android.view.MenuItem;
 
 import com.parse.Parse;
 import com.parse.ParseAnalytics;
+import com.parse.ParseException;
 import com.parse.ParseInstallation;
+import com.parse.ParsePush;
+import com.parse.SaveCallback;
 
 
 public class MainActivity extends ActionBarActivity {
@@ -25,6 +28,12 @@ public class MainActivity extends ActionBarActivity {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_main);
     ParseAnalytics.trackAppOpenedInBackground(getIntent());
+    ParsePush.subscribeInBackground("IRSensor", new SaveCallback() {
+      @Override
+      public void done(ParseException e) {
+
+      }
+    });
   }
 
   @Override
