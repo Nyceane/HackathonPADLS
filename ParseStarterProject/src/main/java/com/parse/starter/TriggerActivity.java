@@ -29,13 +29,20 @@ import java.net.URI;
  * Created by peterma on 1/2/16.
  */
 public class TriggerActivity extends Activity{
+
+    private final static String TAG = "TriggerActivity";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
         MainActivity mainActivity = ((StarterApplication)getApplication()).getMainActivity();
-        if(mainActivity!=null) mainActivity.sendMessages();
+        if(mainActivity!=null) {
+            mainActivity.sendMessages();
+        } else {
+            Log.d(TAG,"mainActivity is null");
+        }
 
         ArcToast("APPLICATION TRIGGERED!");
 
