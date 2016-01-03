@@ -216,7 +216,7 @@ public class MainActivity extends AppCompatActivity implements
                         fd.apply();
 
                         //TEST ONLY
-                        sendMessages();;
+//                        sendMessages();;
 
                     }
                 } finally {
