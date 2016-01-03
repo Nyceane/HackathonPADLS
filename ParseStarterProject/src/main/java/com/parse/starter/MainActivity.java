@@ -398,9 +398,12 @@ public class MainActivity extends AppCompatActivity implements
         }
 
         for (String destination : arrayList) {
+            destination = destination.replaceAll( "[^\\d]", "" );
+            if(!destination.startsWith("+")) {
+                destination = "+1"+destination;
+            }
             sendSMSMessage(text, destination);
         }
-
 
     }
 
@@ -409,10 +412,11 @@ public class MainActivity extends AppCompatActivity implements
         Log.d(TAG,"sending SMS to "+destination);
 
         KandySMSMessage message = null;
+
         try {
             message = new KandySMSMessage(destination, "Kandy SMS", text);
         } catch (KandyIllegalArgumentException e) {
-            //TODO insert your code here
+            Log.d(TAG,e.getMessage());
         }
 
         // Sending message
