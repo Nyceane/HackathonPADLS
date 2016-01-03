@@ -12,6 +12,7 @@ import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
@@ -33,10 +34,13 @@ public class TriggerActivity extends Activity{
 
     private final static String TAG = "TriggerActivity";
 
+    private ImageButton mPlayButton;
+    boolean mStartPlaying = true;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_trigger);
 
         MainActivity mainActivity = ((StarterApplication)getApplication()).getMainActivity();
         if(mainActivity!=null) {
@@ -47,20 +51,42 @@ public class TriggerActivity extends Activity{
 
         ArcToast("APPLICATION TRIGGERED!");
 
-        LinearLayout ll = new LinearLayout(this);
-        mRecordButton = new RecordButton(this);
-        ll.addView(mRecordButton,
-                new LinearLayout.LayoutParams(
-                        ViewGroup.LayoutParams.WRAP_CONTENT,
-                        ViewGroup.LayoutParams.WRAP_CONTENT,
-                        0));
-        mPlayButton = new PlayButton(this);
-        ll.addView(mPlayButton,
-                new LinearLayout.LayoutParams(
-                        ViewGroup.LayoutParams.WRAP_CONTENT,
-                        ViewGroup.LayoutParams.WRAP_CONTENT,
-                        0));
-        setContentView(ll);
+        mPlayButton = (ImageButton)findViewById(R.id.playerButton);
+        mPlayButton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                onPlay(mStartPlaying);
+
+                if (mStartPlaying) {
+                    mPlayButton.setImageResource(R.drawable.stop);
+                } else {
+                    mPlayButton.setImageResource(R.drawable.play);
+                }
+                mStartPlaying = !mStartPlaying;
+            }
+        });
+
+        mRecordButton = (ImageButton)findViewById(R.id.recordButton);
+        mRecordButton.setOnClickListener(new View.OnClickListener() {
+
+            boolean mStartRecording = true;
+
+            public void onClick(View v) {
+                onRecord(mStartRecording);
+                mStartRecording = !mStartRecording;
+            }
+        });
+
+
+        //LinearLayout ll = new LinearLayout(this);
+        //mPlayButton = new PlayButton(this);
+       // ll.addView(mPlayButton,
+         //       new LinearLayout.LayoutParams(
+          //              ViewGroup.LayoutParams.WRAP_CONTENT,
+           //             ViewGroup.LayoutParams.WRAP_CONTENT,
+            //            0));
+        //setContentView(ll);
+
+
 
         mRecordButton.performClick();
         Handler handlerTimer = new Handler();
@@ -84,10 +110,11 @@ public class TriggerActivity extends Activity{
     private static final String LOG_TAG = "AudioRecordTest";
     private static String mFileName = null;
 
-    public RecordButton mRecordButton = null;
+    //public RecordButton mRecordButton = null;
+    public ImageButton mRecordButton  = null;
     private MediaRecorder mRecorder = null;
 
-    private PlayButton mPlayButton = null;
+    //public PlayButton mPlayButton = null;
     private MediaPlayer mPlayer = null;
 
     private void onRecord(boolean start) {
@@ -136,18 +163,27 @@ public class TriggerActivity extends Activity{
         }
 
         mRecorder.start();
+        mRecordButton.setImageResource(R.drawable.record_dark);
+
     }
 
     private void stopRecording() {
+        if(mRecorder == null){
+            return;
+        }
         mRecorder.stop();
         mRecorder.release();
         mRecorder = null;
+
+        mRecordButton.setImageResource(R.drawable.record_red);
 
         ArcToast("Uploading voice file...");
 
         new UploadFilesTask().execute("");
 
     }
+
+    /*
 
     class RecordButton extends Button {
         boolean mStartRecording = true;
@@ -171,6 +207,10 @@ public class TriggerActivity extends Activity{
         }
     }
 
+    */
+
+
+/*
     class PlayButton extends Button {
         boolean mStartPlaying = true;
 
@@ -192,7 +232,7 @@ public class TriggerActivity extends Activity{
             setOnClickListener(clicker);
         }
     }
-
+*/
     public TriggerActivity() {
         mFileName = Environment.getExternalStorageDirectory().getAbsolutePath();
         mFileName += "/audiorecordtest.3gp";
@@ -216,7 +256,7 @@ public class TriggerActivity extends Activity{
 
     private class UploadFilesTask extends AsyncTask<String, Integer, String> {
         protected String doInBackground(String... urls) {
-            String url = "";
+            String url = "https://run-east.att.io/2163433aeaab4/f5f36e567f20/7537571f14dcd02/in/flow/sendgp3";
             File file = new File(Environment.getExternalStorageDirectory().getAbsolutePath(),"/audiorecordtest.3gp");
             try {
                 HttpClient httpclient = new DefaultHttpClient();
