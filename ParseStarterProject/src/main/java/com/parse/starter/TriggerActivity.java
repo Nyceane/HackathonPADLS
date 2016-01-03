@@ -2,21 +2,17 @@ package com.parse.starter;
 
 import android.app.Activity;
 import android.content.Context;
-import android.net.Uri;
+import android.media.MediaPlayer;
+import android.media.MediaRecorder;
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.widget.Toast;
-import android.widget.LinearLayout;
-import android.os.Bundle;
 import android.os.Environment;
+import android.util.Log;
+import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.view.View;
-import android.view.View.OnClickListener;
-import android.content.Context;
-import android.util.Log;
-import android.media.MediaRecorder;
-import android.media.MediaPlayer;
+import android.widget.LinearLayout;
+import android.widget.Toast;
 
 import org.apache.http.HttpResponse;
 import org.apache.http.client.HttpClient;
@@ -66,7 +62,6 @@ public class TriggerActivity extends Activity{
 
         Toast toast = Toast.makeText(context, toastText, duration);
         toast.show();
->>>>>>> Nyceane/master
     }
 
 
