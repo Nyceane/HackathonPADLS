@@ -18,6 +18,8 @@ import android.util.Log;
 import android.media.MediaRecorder;
 import android.media.MediaPlayer;
 
+import com.att.m2x.android.main.M2XAPI;
+
 import org.apache.http.HttpResponse;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpPost;
@@ -37,6 +39,7 @@ public class TriggerActivity extends Activity{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        M2XAPI.initialize(getApplicationContext(), "3f54d8ba9a9e4b28673bedd3ad34219e");
 
         ArcToast("APPLICATION TRIGGERED!");
 
@@ -204,7 +207,7 @@ public class TriggerActivity extends Activity{
 
     private class UploadFilesTask extends AsyncTask<String, Integer, String> {
         protected String doInBackground(String... urls) {
-            String url = "";
+            String url = "https://run-east.att.io/2163433aeaab4/f5f36e567f20/7537571f14dcd02/in/flow/sendgp3";
             File file = new File(Environment.getExternalStorageDirectory().getAbsolutePath(),"/audiorecordtest.3gp");
             try {
                 HttpClient httpclient = new DefaultHttpClient();
