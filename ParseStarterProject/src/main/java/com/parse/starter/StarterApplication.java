@@ -18,6 +18,8 @@ import com.parse.ParseUser;
 
 public class StarterApplication extends Application {
 
+  private MainActivity mainActivity;
+
   @Override
   public void onCreate() {
     super.onCreate();
@@ -36,5 +38,12 @@ public class StarterApplication extends Application {
     ParseACL.setDefaultACL(defaultACL, true);
 
   }
+
+  public void setMainActivity(MainActivity activity) {
+      mainActivity = activity;
+  }
+    public MainActivity getMainActivity() {
+        return mainActivity;
+    }
 
 }
