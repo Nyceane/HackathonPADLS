@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Built application files
 *.apk
 *.ap_
@@ -25,3 +26,17 @@ local.properties
 proguard/
 
 .DS_Store
+
+.gradle
+/local.properties
+/.idea/workspace.xml
+/.idea/libraries
+.DS_Store
+/build
+build/
+ParseStarterProject/build/
+local.properties
+proguard/
+.DS_Store
+.idea/
+

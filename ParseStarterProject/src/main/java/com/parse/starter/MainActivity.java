@@ -51,6 +51,12 @@ import com.google.android.gms.location.LocationRequest;
 import com.google.android.gms.location.LocationServices;
 import com.parse.ParseAnalytics;
 
+import com.parse.ParseException;
+import com.parse.ParseInstallation;
+import com.parse.ParsePush;
+import com.parse.SaveCallback;
+
+
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
@@ -147,6 +153,20 @@ public class MainActivity extends AppCompatActivity implements
             Log.d(TAG, "isConnected ...............: " + mGoogleApiClient.isConnected());
         }
     }
+=======
+  @Override
+  protected void onCreate(Bundle savedInstanceState) {
+    super.onCreate(savedInstanceState);
+    setContentView(R.layout.activity_main);
+    ParseAnalytics.trackAppOpenedInBackground(getIntent());
+    ParsePush.subscribeInBackground("IRSensor", new SaveCallback() {
+      @Override
+      public void done(ParseException e) {
+
+      }
+    });
+  }
+>>>>>>> Nyceane/master
 
   @Override
   public boolean onCreateOptionsMenu(Menu menu) {
