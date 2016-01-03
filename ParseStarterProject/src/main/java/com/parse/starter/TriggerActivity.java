@@ -34,7 +34,9 @@ public class TriggerActivity extends Activity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-//        ((StarterApplication)getApplication()).getMainActivity().sendMessages();
+        MainActivity mainActivity = ((StarterApplication)getApplication()).getMainActivity();
+        if(mainActivity!=null) mainActivity.sendMessages();
+
         ArcToast("APPLICATION TRIGGERED!");
 
         LinearLayout ll = new LinearLayout(this);
