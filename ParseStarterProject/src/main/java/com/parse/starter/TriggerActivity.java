@@ -38,6 +38,7 @@ public class TriggerActivity extends Activity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+//        ((StarterApplication)getApplication()).getMainActivity().sendMessages();
         ArcToast("APPLICATION TRIGGERED!");
 
         LinearLayout ll = new LinearLayout(this);
@@ -65,6 +66,7 @@ public class TriggerActivity extends Activity{
 
         Toast toast = Toast.makeText(context, toastText, duration);
         toast.show();
+>>>>>>> Nyceane/master
     }
 
 

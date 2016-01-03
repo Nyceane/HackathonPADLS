@@ -11,8 +11,8 @@
     <string name="parse_app_id">COLFRcv3xi8naPtnDUHK4QwXpY8E49t9OuBYzKmN</string>
     <string name="parse_client_key">NJsKhQZ9pSJXPQ1EnMdzptxWxvLyzAp4AihbEdVp</string>
 
-    <string name="app_name">Parse Starter Project</string>
+    <string name="app_name">Guardian Accessories</string>
 
-    <string name="hello_world">Hello World!</string>
+    <string name="contact">phone # (pick one from settings)</string>
     <string name="action_settings">Settings</string>
 </resources>
