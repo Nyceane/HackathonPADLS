@@ -12,6 +12,7 @@ buildscript {
 }
 
 android {
+    useLibrary 'org.apache.http.legacy'
     compileSdkVersion rootProject.ext.compileSdkVersion
     buildToolsVersion rootProject.ext.buildToolsVersion
 
