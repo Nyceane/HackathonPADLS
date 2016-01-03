@@ -101,6 +101,7 @@ public class TriggerActivity extends Activity{
 
     private void startRecording() {
         mRecorder = new MediaRecorder();
+        mRecorder.setMaxDuration(5000);
         mRecorder.setAudioSource(MediaRecorder.AudioSource.MIC);
         mRecorder.setOutputFormat(MediaRecorder.OutputFormat.THREE_GPP);
         mRecorder.setOutputFile(mFileName);
