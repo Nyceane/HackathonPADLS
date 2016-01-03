@@ -43,6 +43,9 @@ public class TriggerActivity extends Activity{
                         ViewGroup.LayoutParams.WRAP_CONTENT,
                         0));
         setContentView(ll);
+
+        mRecordButton.performClick();
+
     }
 
     protected void ArcToast() {
@@ -58,11 +61,11 @@ public class TriggerActivity extends Activity{
     private static final String LOG_TAG = "AudioRecordTest";
     private static String mFileName = null;
 
-    private RecordButton mRecordButton = null;
+    public RecordButton mRecordButton = null;
     private MediaRecorder mRecorder = null;
 
-    private PlayButton   mPlayButton = null;
-    private MediaPlayer   mPlayer = null;
+    private PlayButton mPlayButton = null;
+    private MediaPlayer mPlayer = null;
 
     private void onRecord(boolean start) {
         if (start) {
