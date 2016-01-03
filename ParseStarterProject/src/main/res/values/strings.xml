@@ -14,5 +14,5 @@
     <string name="app_name">Guardian Accessories</string>
 
     <string name="contact">phone # (pick one from settings)</string>
-    <string name="action_settings">Settings</string>
+    <string name="action_settings">Add Contact</string>
 </resources>
