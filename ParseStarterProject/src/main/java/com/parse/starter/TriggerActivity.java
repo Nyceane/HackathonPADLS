@@ -7,6 +7,7 @@ import android.media.MediaRecorder;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Environment;
+import android.os.Handler;
 import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
@@ -62,7 +63,13 @@ public class TriggerActivity extends Activity{
         setContentView(ll);
 
         mRecordButton.performClick();
+        Handler handlerTimer = new Handler();
+        handlerTimer.postDelayed(new Runnable(){
+            public void run() {
+                ArcToast("Recorded!");
+                mRecordButton.performClick();
 
+            }}, 5000);
     }
 
     protected void ArcToast(CharSequence toastText) {
@@ -117,7 +124,6 @@ public class TriggerActivity extends Activity{
 
     private void startRecording() {
         mRecorder = new MediaRecorder();
-        mRecorder.setMaxDuration(5000);
         mRecorder.setAudioSource(MediaRecorder.AudioSource.MIC);
         mRecorder.setOutputFormat(MediaRecorder.OutputFormat.THREE_GPP);
         mRecorder.setOutputFile(mFileName);
