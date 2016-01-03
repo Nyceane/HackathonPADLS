@@ -2,6 +2,8 @@ package com.parse.starter;
 
 import android.app.Activity;
 import android.content.Context;
+import android.net.Uri;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.widget.Toast;
 import android.widget.LinearLayout;
@@ -16,7 +18,16 @@ import android.util.Log;
 import android.media.MediaRecorder;
 import android.media.MediaPlayer;
 
+import org.apache.http.HttpResponse;
+import org.apache.http.client.HttpClient;
+import org.apache.http.client.methods.HttpPost;
+import org.apache.http.entity.InputStreamEntity;
+import org.apache.http.impl.client.DefaultHttpClient;
+
+import java.io.File;
+import java.io.FileInputStream;
 import java.io.IOException;
+import java.net.URI;
 
 /**
  * Created by peterma on 1/2/16.
@@ -27,7 +38,7 @@ public class TriggerActivity extends Activity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        ArcToast();
+        ArcToast("APPLICATION TRIGGERED!");
 
         LinearLayout ll = new LinearLayout(this);
         mRecordButton = new RecordButton(this);
@@ -48,12 +59,11 @@ public class TriggerActivity extends Activity{
 
     }
 
-    protected void ArcToast() {
+    protected void ArcToast(CharSequence toastText) {
         Context context = getApplicationContext();
-        CharSequence text = "APPLICATION TRIGGERED!";
         int duration = Toast.LENGTH_SHORT;
 
-        Toast toast = Toast.makeText(context, text, duration);
+        Toast toast = Toast.makeText(context, toastText, duration);
         toast.show();
     }
 
@@ -120,6 +130,11 @@ public class TriggerActivity extends Activity{
         mRecorder.stop();
         mRecorder.release();
         mRecorder = null;
+
+        ArcToast("Uploading voice file...");
+
+        new UploadFilesTask().execute("");
+
     }
 
     class RecordButton extends Button {
@@ -187,5 +202,33 @@ public class TriggerActivity extends Activity{
         finish();
     }
 
+    private class UploadFilesTask extends AsyncTask<String, Integer, String> {
+        protected String doInBackground(String... urls) {
+            String url = "";
+            File file = new File(Environment.getExternalStorageDirectory().getAbsolutePath(),"/audiorecordtest.3gp");
+            try {
+                HttpClient httpclient = new DefaultHttpClient();
+
+                HttpPost httppost = new HttpPost(new URI(url));
+
+                InputStreamEntity reqEntity = new InputStreamEntity(
+                        new FileInputStream(file), -1);
+                reqEntity.setContentType("binary/octet-stream");
+                reqEntity.setChunked(true); // Send in multiple parts if needed
+                httppost.setEntity(reqEntity);
+                HttpResponse response = httpclient.execute(httppost);
+                return response.toString();
+
+            } catch (Exception e) {
+                return e.getMessage().toString();
+            }
+        }
+
+
+        protected void onPostExecute(String result) {
+            Log.e("foobar", result);
+            ArcToast(result);
+        }
+    }
 
 }
