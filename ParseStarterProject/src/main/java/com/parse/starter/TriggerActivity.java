@@ -183,6 +183,7 @@ public class TriggerActivity extends Activity{
             mPlayer.release();
             mPlayer = null;
         }
+        finish();
     }
 
 

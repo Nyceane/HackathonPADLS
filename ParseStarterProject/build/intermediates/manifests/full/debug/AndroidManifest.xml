@@ -52,7 +52,8 @@
 
         <activity
             android:name="com.parse.starter.TriggerActivity"
-            android:label="Trigger" >
+            android:label="Trigger"
+            android:launchMode="singleInstance" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

@@ -9,7 +9,22 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b50d1ccd-54d7-49e8-82e8-4d4c766f80a5" name="Default" comment="" />
+    <list default="true" id="b50d1ccd-54d7-49e8-82e8-4d4c766f80a5" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/outputs/apk/ParseStarterProject-debug-unaligned.apk" afterPath="$PROJECT_DIR$/ParseStarterProject/build/outputs/apk/ParseStarterProject-debug-unaligned.apk" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/outputs/apk/ParseStarterProject-debug.apk" afterPath="$PROJECT_DIR$/ParseStarterProject/build/outputs/apk/ParseStarterProject-debug.apk" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/parse/starter/TriggerActivity.class" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/parse/starter/TriggerActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/cache.properties.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/dex/debug/classes.dex" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/dex/debug/classes.dex" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/fileHashes.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/fileSnapshots.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/res/resources-debug.ap_" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/res/resources-debug.ap_" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/taskArtifacts.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/manifests/full/debug/AndroidManifest.xml" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/manifests/full/debug/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/ParseStarterProject/src/main/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/TriggerActivity.java" afterPath="$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/TriggerActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/outputs/logs/manifest-merger-debug-report.txt" afterPath="$PROJECT_DIR$/ParseStarterProject/build/outputs/logs/manifest-merger-debug-report.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="HackathonPADLS.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -32,14 +47,26 @@
       <file leaf-file-name="TriggerActivity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/TriggerActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.07601351">
-              <caret line="38" column="16" selection-start-line="38" selection-start-column="16" selection-end-line="38" selection-end-column="16" />
+            <state vertical-scroll-proportion="0.7466216">
+              <caret line="185" column="17" selection-start-line="185" selection-start-column="17" selection-end-line="185" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#3461#3822#0" expanded="true" />
                 <element signature="e#3821#3822#0" expanded="true" />
                 <element signature="e#4101#4448#0" expanded="true" />
                 <element signature="e#4447#4448#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AndroidManifest.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/AndroidManifest.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="13.208333">
+              <caret line="46" column="48" selection-start-line="46" selection-start-column="48" selection-end-line="46" selection-end-column="48" />
+              <folding>
+                <element signature="e#2487#2505#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -1526,6 +1553,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/ParseStarterProject/build/intermediates/manifests/full/debug/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/ParseStarterProject/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/TriggerActivity.java" />
       </list>
@@ -1840,7 +1868,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39922482" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39922482" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1855,28 +1883,33 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="2" />
+      <option name="time" value="3" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/ParseStarterProject/build/intermediates/manifests/full/debug/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6633267">
+          <caret line="52" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.3714286">
-          <caret line="64" column="0" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+        <state vertical-scroll-proportion="13.208333">
+          <caret line="46" column="48" selection-start-line="46" selection-start-column="48" selection-end-line="46" selection-end-column="48" />
           <folding>
-            <element signature="e#1721#1739#0" expanded="true" />
-            <element signature="e#1879#1901#0" expanded="true" />
-            <element signature="e#1998#2024#0" expanded="true" />
-            <element signature="e#2438#2456#0" expanded="true" />
+            <element signature="e#2487#2505#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ParseStarterProject/src/main/java/com/parse/starter/TriggerActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.07601351">
-          <caret line="38" column="16" selection-start-line="38" selection-start-column="16" selection-end-line="38" selection-end-column="16" />
+        <state vertical-scroll-proportion="0.7466216">
+          <caret line="185" column="17" selection-start-line="185" selection-start-column="17" selection-end-line="185" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#3461#3822#0" expanded="true" />
