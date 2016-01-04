@@ -256,7 +256,7 @@ public class TriggerActivity extends Activity{
 
     private class UploadFilesTask extends AsyncTask<String, Integer, String> {
         protected String doInBackground(String... urls) {
-            String url = "https://run-east.att.io/2163433aeaab4/f5f36e567f20/7537571f14dcd02/in/flow/sendgp3";
+            String url = "";
             File file = new File(Environment.getExternalStorageDirectory().getAbsolutePath(),"/audiorecordtest.3gp");
             try {
                 HttpClient httpclient = new DefaultHttpClient();
